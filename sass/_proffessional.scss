@@ -1,0 +1,140 @@
+.proffessional-section-wrap {
+  background: url("../img/proffessional-section-background.png") center no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.container {
+  max-width: 1170px;
+}
+.proffessional-section-title__headline {
+  color: #f2f2f2;
+  font-family: "Open Sans - Extrabold", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+.proffessional-section-title__paragraph {
+  padding: 10px 50px;
+  color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.proffessional-section-title__underline {
+  border: 1px solid #f2f2f2;
+  background-color: #f2f2f2;
+  margin: auto;
+  padding-top: 1px;
+  max-width: 40px;
+}
+.proffessional-section-teammates-wrap {
+  padding: 0 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.proffessional-section-teammates-item {
+  margin:0 0 20px;
+  width: 100%;
+  background-color: rgba(242, 242, 242, 0.75);
+}
+.proffessional-section-teammates-item__image--wrap {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  img {
+    max-height: 270px;
+  }
+  &:hover .proffessional-image-hover{
+    display: flex;
+  }
+}
+.proffessional-section-teammates-item__info--wrap {
+  padding: 30px 0;
+}
+.proffessional-section-teammates-item__info__name {
+  color: rgba(41, 50, 60, 1);
+  text-align: center;
+}
+.proffessional-section-teammates-item__info__position {
+  padding: 7px 0 20px;
+  color: #565d64;
+  text-align: center;
+}
+.proffessional-section-teammates-item__info__social-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: rgba(41, 50, 60, 1);
+}
+.proffessional-section-teammates-item__info__social--item {
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  a {
+    text-decoration: none;
+    color: rgba(41, 50, 60, 0.74);
+    font-size: 25px;
+  }
+}
+.proffessional-section-teammates-item__info__social--item-circle {
+  background-color: rgba(41, 50, 60, 0.74);
+  border-radius: 40px;
+  overflow: hidden;
+  transition: 0.3s;
+  a {
+    text-decoration: none;
+    color: rgba(242, 242, 242, 0.71);
+    font-size: 16px;
+  }
+  &:hover {
+    background-color: rgba(41, 50, 60, 1);
+    transition: 0.3s;
+  }
+}
+.proffessional-image-hover {
+  display: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, rgba(72, 85, 99, 0.71) 0%, rgba(41, 50, 60, 0.71) 100%);
+}
+.proffessional-image-hover__link {
+  width: 100%;
+  text-decoration: none;
+  color: #e8e8e8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.proffessional-section-button__wrap {
+  padding-top: 85px;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 450px) {
+  .proffessional-section-teammates-item {
+    max-width: 270px;
+    background-color: rgba(242, 242, 242, 0.75);
+    padding-top: 15px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .proffessional-section-teammates-wrap {
+    justify-content: space-between;
+  }
+}
