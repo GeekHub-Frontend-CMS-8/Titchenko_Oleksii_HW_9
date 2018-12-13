@@ -2,363 +2,518 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lesson7</title>
     <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Montserrat:400,400i,700,700i|Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>ZET</title>
 </head>
+
+
 <body>
-<!--первая секция TOP-->
-     <section class="top-section-wrap">
-        <header class="container header">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-            </div>
+<header id="header" class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class=" col-md-3 navbar-brand" href="#">
+            <img src="img/logo.jpg" alt="logo"  .img-fluid>
+        </a>
 
-            <div class="burger-wrapper">
-                <input type="checkbox" id="checkbox-menu">
-                <label for="checkbox-menu">MENU</label>
-                <div class="burger-line first"></div>
-                <div class="burger-line second"></div>
-                <div class="burger-line third"></div>
-                <div class="burger-line fourth"></div>
-                <nav class="main-menu">
-                    <a href="#" class="burger-a">Help</a>
-                    <a href="#" class="burger-a">Help</a>
-                    <a href="#" class="burger-a">Help</a>
-                    <a href="#" class="burger-a">Help</a>
-                    <a href="#" class="burger-a">Help</a>
-                </nav>
+        <ul class="col-md-7 navbar-nav justify-content-end">
+            <li class="nav__item">
+                <a class="nav-link" href="#">Overview</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav-link" href="#">About Fork</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav-link" href="#">Buying Options</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav-link" href="#">Support</a>
+            </li>
+        </ul>
+        <div class="col ml-auto"> <!---lg-2-->
+            <button class="btn btn-primary" type="submit">Buy Now</button>
+        </div>
+    </nav>
+</header>
+<!--Вторая секция ForkApp-->
+    <section class="fork">
+            <div class="container text-center justify-content-center">
+                <h1>Fork App</h1>
+                  <p class="text-fork">A real gamechanger in the world of web development</p>
+                  <p class="text2-fork">v. 2.8 For Mac and Windows</p>
+                <button>Download For Free Now</button>
+
             </div>
-        </header>
-        <div class="container hero">
-            <h1 class="hero__title">
-                Something Nothing
-            </h1>
-            <p class="hero__paragraph">
-                Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
-                eleifend ac, enim iam ultricies nisi eleifend tellus.
-            </p>
-            <a href="#" type="button" class="button">LET’S TALK</a>
-            <a href="#" type="button" class="button hero__nav-arrow">
-                <i class="fa fa-angle-down"></i>
-            </a>
-            <div class="hero__vertical-line"></div>
+        </section>
+    </section>
+<!--Третяя секция Editor-->
+    <section class="editor">
+        <div class="container text-center justify-content-center">
+            <p>Unlimited 30-Days trial period</p> <!--наложился схлопнулся слой-->
+            <h2>Revolutionary editor</h2>
+            <p class="col-10-lg">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate
+                dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+                <!--генератор иконок-->
+            <a class="github-button" href="https://github.com/ntkme/github-buttons/subscription" data-icon="octicon-eye"
+               data-show-count="true" aria-label="Watch ntkme/github-buttons on GitHub">Watch</a>
+
+            <a class="github-button" href="https://github.com/ntkme/github-buttons" data-icon="octicon-star"
+               data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+
+            <a class="github-button" href="https://github.com/ntkme/github-buttons/fork" data-icon="octicon-repo-forked"
+               data-show-count="true" aria-label="Fork ntkme/github-buttons on GitHub">Fork</a>
         </div>
     </section>
-<!--вторая секция SERVICES-->
-    <section class="services-section-wrap">
-        <div class="container services">
-            <div class="services-section-title">
-                <h2 class="services-section-title__headline">
-                    SERVICES
+<!--четвертая секция Here is what-->
+<section class="features">
+    <div id="features-anchor"></div>
+    <div class="container">
+        <div class="row upper-features-row">
+            <div class="col-12 col-md-6 order-1 order-md-0"> <!--по 6 на 992 пикселя и выше-->
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/4search-icon.jpg" alt="search">
+                    </div>
+                    <div class="col-9"><!--или col-6?-->
+                        <h3>
+                            Created to Make The Web Better
+                        </h3>
+                        <p>
+                            Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate
+                            dignissim. Sed id metus id quam auctor molestie eget ut augue.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/4powerfull-icon.jpg" alt="powerfull">
+                    </div>
+                    <div class="col-9">
+                        <h3>
+                            Incredibly Powerful Tool
+                        </h3>
+                        <p>
+                            Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat
+                            massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/4experiment-icon.jpg" alt="experiment">
+                    </div>
+                    <div class="col-9">
+                        <h3>
+                            Experimental Stuff
+                        </h3>
+                        <p>
+                            Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat
+                            massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/4betted-icon.jpg" alt="better">
+                    </div>
+                    <div class="col-9">
+                        <h3>
+                            Created to Make The Web Better
+                        </h3>
+                        <p>
+                            Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat
+                            massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.
+                        </p>
+                    </div>
+                    <img src="img/code-desktop.jpg" alt="idea icon" class="features-overflow-image d-block d-md-none">
+                </div>
+
+            </div>
+            <div class="col-12 col-md-6 order-0 order-md-1">
+                <h2 class="features-title text-center">
+                    &lt;Here is what you get&gt; <!--спецсимволы-->
                 </h2>
-                <p class="services-section-title__paragraph">
-                    Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng
-                </p>
-                <div class="services-section-title__underline"></div>
-            </div>
-            <div class="service-items-wrap">
-                <div class="service-item">
-                    <div class="service-item__img-wrap">
-                        <i class="fa fa-laptop"></i>
-                    </div>
-                    <h3 class="service-item__headline">
-                        FULLY RESPONSIVE
-                    </h3>
-                    <p class="service-item__paragraph">
-                        Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
-                        tellus. Phasellus viverra nulla ut metus varius laoreet.
-                    </p>
-                </div>
-                <div class="service-item">
-                    <div class="service-item__img-wrap">
-                        <i class="fa fa-sliders service-item__img-wrap__customize"></i>
-                    </div>
-                    <h3 class="service-item__headline">
-                        EASY CUSTOMIZE
-                    </h3>
-                    <p class="service-item__paragraph">
-                        Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-                        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae.
-                    </p>
-                </div>
-                <div class="service-item">
-                    <div class="service-item__img-wrap">
-                        <i class="fa fa-map-o"></i>
-                    </div>
-                    <h3 class="service-item__headline">
-                        SEO READY
-                    </h3>
-                    <p class="service-item__paragraph">
-                        Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-                        Cras dapibus. Vivamus elementum semper nisi
-                    </p>
-                </div>
-                <div class="service-item">
-                    <div class="service-item__img-wrap">
-                        <i class="fa fa-heart-o"></i>
-                    </div>
-                    <h3 class="service-item__headline">
-                        MADE WITH LOVE
-                    </h3>
-                    <p class="service-item__paragraph">
-                        ecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.
-                        vulputate eget, arcu.
-                    </p>
-                </div>
+                <img src="img/code-desktop.jpg" alt="idea icon" class="features-overflow-image d-none d-md-block">
             </div>
         </div>
-    </section>
-<!--третья секция WORKS-->
-    <section class="works-section-wrap">
-        <div class="container works-section-title">
-            <h2 class="works-section-title__headline">
-                WORKS
-            </h2>
-            <p class="works-section-title__paragraph">
-                Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng
-            </p>
-            <div class="services-section-title__underline"></div> <!--этот класс перенести в глобал-->
-        </div>
-        <div class="works-img__wrap">
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        BOOMING SHOP
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-1.png" alt="1">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        SEO soft
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-2.png" alt="2">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        Fresh Music
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-3.png" alt="3">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        App Screen
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-4.png" alt="4">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        Family Safety
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-5.png" alt="5">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-images__item--hover__headline">
-                        Something nothing
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-6.png" alt="6">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        Grocery
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-7.png" alt="7">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        knowledge
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-8.png" alt="8">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        football
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-9.png" alt="9">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        tasty food
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-10.png" alt="10">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        Robin Smarter
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-11.png" alt="11">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        Nasa
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-12.png" alt="12">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        coil tea
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-13.png" alt="13">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        kick your boss 2
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-14.png" alt="14">
-            </div>
-            <div class="works-img__item">
-                <div class="works-img__item--hover">
-                    <h3 class="works-img__item--hover__headline">
-                        automaty a gramatiky
-                    </h3>
-                    <p class="works-img__item--hover__paragraph">
-                        Website Development
-                    </p>
-                </div>
-                <img src="img/works-15.png" alt="15">
-            </div>
-        </div>
-    </section>
-<!--четвертая секция HAPPY CLIENTS-->
-    <section class="testimonials-section-wrap">
-        <div class="container testimonials-section-title">
-            <h2 class="testimonials-section-title__headline">
-                HAPPY CLIENTS
-            </h2>
-            <p class="testimonials-section-title__paragraph">
-                Awan mripat gendhis angsal Jawa Ipsum nangis rumput wilujeng
-            </p>
-            <div class="services-section-title__underline"></div>
+    </div>
+</section>
 
+<!--пятая секция Steven Strange-->
+<section class="carousel-section">
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row carousel-name-block">
+                        <div class="col-3">
+                            <img src="img/5photo-Steven.jpg" alt="photo">
+                        </div>
+                        <div class="col-9 d-flex flex-column justify-content-center">
+                            <h3>
+                                Steven Strange
+                            </h3>
+                            <a href="#">
+                                @DoctorS
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-comment-block">
+                        <p class="text-center carousel-comment-p"><a href="#">@Pixelbuddha</a>
+                            <span>Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus
+                            mollis risus. Praesent sit amet erat eget eros.</span>
+                        </p>
+                        <p class="text-center pt-3 carousel-comment-time">
+                            2 hours ago
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row carousel-name-block">
+                        <div class="col-3">
+                            <img src="img/5photo-Steven.jpg" alt="photo">
+                        </div>
+                        <div class="col-9 d-flex flex-column justify-content-center">
+                            <h3>
+                                Steven Strange
+                            </h3>
+                            <a href="#">
+                                @DoctorS
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-comment-block">
+                        <p class="text-center carousel-comment-p"><a href="#">@Pixelbuddha</a>
+                            <span>Suspendisse sodales sem
+                            est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet
+                            erat eget eros.</span>
+                        </p>
+                        <p class="text-center pt-3 carousel-comment-time">
+                            2 hours ago
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row carousel-name-block">
+                        <div class="col-3">
+                            <img src="img/5photo-professor.jpg" alt="photo">
+                        </div>
+                        <div class="col-9 d-flex flex-column justify-content-center">
+                            <h3>
+                                Steven Strange
+                            </h3>
+                            <a href="#">
+                                @DoctorS
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-comment-block">
+                        <p class="text-center carousel-comment-p"><a href="#">@Pixelbuddha</a>
+                            <span>Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus
+                            mollis risus. Praesent sit amet erat eget eros.</span>
+                        </p>
+                        <p class="text-center pt-3 carousel-comment-time">
+                            <span>2 hours ago</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <div class="testimonials-slider">
-            <div>
-                <p class="testimonials__cite-paragraph">
-                    Bebed pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal
-                    benang; lek-lekan? Madeg pendhet lenggah, "nanem dipetak dhuwung, dipun awis bokong ayam.
-                    gendhis angsal Jawa Ipsum nangis rumput wilujeng unyeng-unyeng; pados gujeng benter andhap
-                    lisa Leres, lisah, ulem-ulem nedhi gesang manah cangkem: nem aken benter bebucal baita dangu
-                </p>
-                <i class="testimonials__cite-end">”</i>
-                <div class="testimonials__photo">
-                    <img src="img/4.jpg" alt="people">
-                </div>
-                <h4 class="testimonials__name">
-                    Vasily Nganu
-                </h4>
-                <p class="testimonials__position">
-                    Dropbox Senior 	Developer
+        <div class="row social-block">
+            <div class="col-12 col-md-4">
+                <a href="#" class="carousel-github-button">
+                    <i class="fa fa-github"></i>
+                    <span class="text-center">
+                            GitHub
+                        </span>
+                </a>
+                <p class="carousel-social-followers">
+                    7 352 Followers
                 </p>
             </div>
-            <div>
-                <p class="testimonials__cite-paragraph">
-                    Bebed pupu warni sangsam ngundang ajang, gujeng sirah lair menda bebucal
-                    benang; lek-lekan? Madeg pendhet lenggah, "nanem dipetak dhuwung, dipun awis bokong ayam.
-                    gendhis angsal Jawa Ipsum nangis rumput wilujeng unyeng-unyeng; pados gujeng benter andhap
-                    lisa Leres, lisah, ulem-ulem nedhi gesang manah cangkem: nem aken benter bebucal baita dangu
-                    gesang manah cangkem: nem aken benter bebucal baita dangu
-                </p>
-                <i class="testimonials__cite-end">”</i>
-                <div class="testimonials__photo">
-                    <img src="img/4.jpg" alt="people">
-                </div>
-                <h4 class="testimonials__name">
-                    Dr.Labanov
-                </h4>
-                <p class="testimonials__position">
-                    Dropbox Senior 	Developer
+            <div class="col-12 col-md-4">
+                <a href="#" class="carousel-twitter-button">
+                    <i class="fa fa-twitter"></i>
+                    <span>
+                            Twitter
+                        </span>
+                </a>
+                <p class="carousel-social-followers">
+                    136 312 Followers
                 </p>
             </div>
-            <div>
-                <p class="testimonials__cite-paragraph">
-                    Bebed pupu warni sangsam past porvu, gujeng sirah lair menda bebucal
-                    benang; lek-lekan? Madeg pendhet lenggah.
-                </p>
-                <i class="testimonials__cite-end">”</i>
-                <div class="testimonials__photo">
-                    <img src="img/4.jpg" alt="people">
-                </div>
-                <h4 class="testimonials__name">
-                    Mr. Macintosh
-                </h4>
-                <p class="testimonials__position">
-                    Dropbox Senior 	Developer
+            <div class="col-12 col-md-4">
+                <a href="#" class="carousel-facebook-button">
+                    <i class="fa fa-facebook"></i>
+                    <span>
+                            Facebook
+                        </span>
+                </a>
+                <p class="carousel-social-followers">
+                    218 092 Subscribers
                 </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!--6 секция Pricing-->
+<section class="pricing">
+    <div class="container">
+        <h2 class="pricing-title text-center">
+            Fork Subscription Pricing
+        </h2>
+        <div class="row">
+                <div class="col-10 col-sm-6 col-md-3 pricing-element text-center">
+                    <h3>students</h3>
+                        <h2>
+                        $29
+                        </h2>
+                        <p class="per-month">
+                        per month
+                         </p>
+                    <div class="pricing-short-line"></div>
+                    <p class="pricing-license">
+                        Personal License
+                    </p>
+                    <a href="#" class="pricing-button">
+                        Purchase
+                    </a>
+                </div>
+                <div class="col-10 col-sm-6 col-md-3 pricing-element text-center">
+                     <h3>professional</h3>
+                        <h2>$59</h2>
+                    <p class="per-month">
+                    per month
+                    </p>
+                    <div class="pricing-short-line"></div>
+                     <p class="pricing-license">
+                      Professional License Email Support
+                     </p>
+                     <a href="#" class="pricing-button">
+                    Purchase
+                </a>
+            </div>
+            <div class="col-10 col-sm-6 col-md-3 pricing-element text-center">
+                <h3>agency</h3>
+                <h2>$99</h2>
+                <p class="per-month">
+                    per month
+                </p>
+                <div class="pricing-short-line"></div>
+                <p class="pricing-license">
+                    1-12 Team Members Phone Support
+                </p>
+                <a href="#" class="pricing-button">
+                    Purchase
+                </a>
+            </div>
+            <div class="col-10 col-sm-6 col-md-3 pricing-element text-center">
+                <h3>enterprise</h3>
+                <h2>$159</h2>
+                <p class="per-month">
+                    per month
+                </p>
+                <div class="pricing-short-line"></div>
+                <p class="pricing-license">
+                    Unlimited Team Members 24/ 7 Phone Support
+                </p>
+                <a href="#" class="pricing-button">
+                    Purchase
+                </a>
+            </div>
+            </div>
+        <p class="pricing-bottom-text">
+            Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet
+            id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci.
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        </p>
+        </div>
+    </div>
+
+</section>
+
+<!--7Subscribe BAG-->
+<section class="subscribe">
+    <form class="row">
+        <div class="col-12 col-md-6 subscribe-text align-items-left">Subscribe To Our Newslatter</div>
+        <div class="col-12 col-md-6 text-right d-flex align-items-center"> <!--текст справа,
+        содержимое по центру 6-->
+            <input type="email" class="subscribe-form-control" placeholder="Email...">
+            <input class="btn btn-primary" type="submit" value="SUBSCRIBE">
+        </div>
+    </form>
+</section>
+
+<!--8NewInRelease-->
+<section class="NewInRelease">
+    <div class="container">
+    <div class="row pb-5"> <!--Spacing utilities $spacer * 3-->
+        <div class="col-12 col-md-4">
+            <h3>New in Release 2.8</h3>
+            <div class="NewInRelease-element">
+                <h4>Fully Available: Live Preview Support for Multiple Browsers8</h4>
+                    <p>Morbi faucibus ante ipsum, a tincidunt libero posuere et. Etiam tempor tortor at odio condimentum,
+                    sit amet fringilla ligula maximus. Mauris venenatis nisl nisi, et dictum dui aliquet nec. Sed erat,
+                    nec aliquam vel, aliquam ac felis.</p>
+            </div>
+            <div class="NewInRelease-element">
+                <h4>Improved Support for Typing</h4>
+                    <p>Nulla purus quam, pulvinar sed ante et, feugiat maximus velit. Donec eu elit mauris.</p>
+            </div>
+            <div class="NewInRelease-element pb-4">
+                <h4>Improved Stability</h4>
+                    <p> Proin id ligula eget massa tincidunt molestie. Morbi urna lectus, molestie vel quam vel, iaculis
+                        fermentum nunc. Morbi imperdiet, leo in interdum pretium.</p>
+            </div>
+            <a href="#" class="links-button">Go to Release Log</a>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <h3>Popular Extensions</h3>
+            <div class="extensions-element">
+                <h4>Custom Themes 1.1</h4>
+                    <p>Etiam viverra vulputate diam, pulvinar cursus augue egestas ullamcorper.</p>
+            </div>
+            <div class="extensions-element">
+                <h4>Filter Forge</h4>
+                    <p>Nulla purus quam, pulvinar sed et, feugiat maximus velit.</p>
+            </div>
+            <div class="extensions-element">
+                <h4>WebZap</h4>
+                    <p>Morbi imperdiet, leo in interdum pretium, elit eros dapibus velit, eu posuere quam diam vitae
+                        orci. Suspendisse interdum accumsan magna vitae commodo.</p>
+            </div>
+            <div class="extensions-element pb-4">
+                <h4>Renamy</h4>
+                    <p>Vivamus consectetur suscipit elit, ut lacinia diam elementum et.</p>
+            </div>
+            <a href="#" class="links-button">Go to Marketplace</a>
+        </div>
+
+        <div class="col-12 col-md-4">
+                <h3>New From the Blog</h3>
+                <div class="extensions-element">
+                    <h4>Morbi imperdiet, leo in interdum pretium.</h4>
+                        <p>February 18, 2015</p>
+                </div>
+                <div class="extensions-element">
+                    <h4>Donec orci ante, porta vel nulla quis, aliquet hendrerit leo.</h4>
+                        <p>February 12, 2015</p>
+                </div>
+                <div class="extensions-element">
+                    <h4>Suspendisse egestas vulputate luctus.</h4>
+                        <p>February 6, 2015</p>
+                </div>
+                <div class="extensions-element">
+                    <h4>Quisque varius ante lorem, eget pretium purus hendrerit a egestas.</h4>
+                        <p>February 2, 2015</p>
+                </div>
+                <div class="extensions-element pb-4">
+                    <h4>Phasellus in augue risus.</h4>
+                        <p>January 23, 2015</p>
+                </div>
+                <a href="#" class="links-button">Go to Blog</a>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- секция Footer-->
+<footer>
+    <div id="support-anchor"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 footer-logo">
+                <a class="d-flex align-items-center pb-4" href="#">
+                    <img src="img/logo.jpg" alt="logo">
+                </a>
+                <p class="pb-4">
+                    Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no quo.
+                </p>
+            </div>
+            <div class="col-0 col-md-1"></div>
+            <div class="col-12 col-md-2 footer-navigation">
+                <h3>
+                    Navigation
+                </h3>
+                <ul class="nav flex-column pb-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#revolutionary-anchor">
+                            Overview
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features-anchor">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing-anchor">
+                            Buying Options
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#support-anchor">
+                            Support
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 phisical-adress">
+                <h2>
+                    347 567 78 90
+                </h2>
+                <p>
+                    AVAILABLE FROM 12PM - 18PM
+                </p>
+                <h3>
+                    New York, NY
+                </h3>
+                <p>
+                    560 Judah St & 15th Ave, Apt 5
+                    San Francisco, CA, 230903
+                </p>
+            </div>
+            <div class="col-12 col-md-3 footer-info">
+                <h3>
+                    Info
+                </h3>
+                <p>
+                    Wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex commodo
+                    consequat. Autem vel hendrerit iriure dolor in hendrerit.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script> <!--для генератора иконок-->
 </body>
 </html>
