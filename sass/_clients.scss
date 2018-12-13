@@ -1,0 +1,13 @@
+.clients-section {
+  background-color: #f5f5f5;
+}
+.client-section__logo {
+  display: flex;
+  list-style: none;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.client-section__logo__item {
+  padding: 15px;
+}
