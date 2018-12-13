@@ -1,11 +1,12 @@
-@import "reset";
-@import "global";
-@import "slicknav";
-@import "top-section";
-@import "nav";
-@import "hero";
-@import "services-section";
-@import "works-section";
-@import "testimonials";
-@import "slider";
-@import "proffessional";
+* {
+  box-sizing: border-box; }
+
+@import "header";
+@import "development";
+@import "branding";
+@import "skills";
+@import "awesome";
+@import "logos_section";
+@import "amazingTeam";
+@import "footer";
+@import "media";
