@@ -20,7 +20,7 @@
 
             <div class="burger-wrapper">
                 <input type="checkbox" id="checkbox-menu">
-                <label for="checkbox-menu">MENU</label>
+                <label for="checkbox-menu" class="label-burger">MENU</label>
                 <div class="burger-line first"></div>
                 <div class="burger-line second"></div>
                 <div class="burger-line third"></div>
@@ -323,8 +323,7 @@
                         Dropbox Senior 	Developer
                     </p>
             </div>
-        </div>
-    </section>
+
 <!--
             <div class="slide testimonials-slider-two">
                     <p class="testimonials-slider__paragraph">
@@ -363,13 +362,14 @@
                         Dropbox Senior 	Developer
                     </p>
 -->
-<!--checked problem burger MENU
-                <div>
+
+                <div class="testimonials-slider-radio">
                     <input checked type="radio" name="slides" id="slide-1"><label for="slide-1"></label>
                     <input  type="radio" name="slides" id="slide-2"><label for="slide-2"></label>
                     <input  type="radio" name="slides" id="slide-3"><label for="slide-3"></label>
                 </div>
--->
+        </div>
+    </section>
 
 
 <!--пятая секция PROFFESSIONAL TEAM-->
@@ -685,5 +685,62 @@
             </div>
     </div>
 </section>
+<!--8 секция CONTACT-->
+<section class="contact-form-section">
+    <div class="contact-form-map__wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7637533.090668222!2d41.62453156711768!3d-20.82103499754433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21d1a4e3ea238545%3A0x5244e3c1977b1388!2z0JzQsNC00LDQs9Cw0YHQutCw0YA!5e0!3m2!1sru!2sua!4v1544817386472" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="contact-form-form__wrap">
+        <form class="contact-form-section__form">
+            <ul class="contact-section-contacts__form__ul">
+                <li class="contact-section-contacts__form__ul__item">
+                    <label for="name" class="contact-input__label">Name</label>
+                    <input type="text" name="name" class="contact-input" id="name">
+                </li>
+                <li class="contact-section-contacts__form__ul__item">
+                    <label for="email" class="contact-input__label">Email</label>
+                    <input type="text" name="email" class="contact-input" id="email">
+                </li>
+                <li class="contact-section-contacts__form__ul__item">
+                    <label for="phone" class="contact-input__label">Phone</label>
+                    <input type="text" name="phone" class="contact-input" id="phone">
+                </li>
+                <li class="contact-section-contacts__form__ul__item">
+                    <label for="message" class="contact-input__label">Message</label>
+                    <textarea name="message" id="message" class="contact-input contact-input__textarea"></textarea>
+                </li>
+            </ul>
+        </form>
+    </div>
+</section>
+<footer class="footer-section">
+    <div class="container footer-container">
+        <div class="footer__secondary-wrap">
+            <img src="img/1logo.jpg" alt="logo">
+            <p class="footer__secondary__paragraph">
+                © Copyright 2015. Allright Reserved
+            </p>
+        </div>
+        <div class="footer__secondary-wrap">
+            <p class="footer__secondary__paragraph">
+                Stay In Touch
+            </p>
+            <ul class="footer-social__list">
+                <li>
+                    <a href="#" class="footer-social__item fa fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="footer-social__item fa fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="#" class="footer-social__item fa fa-google-plus"></a>
+                </li>
+                <li>
+                    <a href="#" class="footer-social__item fa fa-dribbble"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
